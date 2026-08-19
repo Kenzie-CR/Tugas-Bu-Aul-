@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ujian RPL</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <table>
+            <tr>
+                <td rowspan="2"><img src="Logo Telkom.png" alt="logo my website gwehj" width="200" height="100"></td>
+                <td><h1>SISTEM PENDAFTARAN PRAKERIN 2026/2027</h1></td>
+            </tr>
+            <tr>
+                <td><em>Learn, Experience and Grow</em></td>
+            </tr>
+        </table>
+
+        <!-- Navigasi -->
+        <hr>
+        <a href="#Beranda" target="_self">Beranda</a> | 
+        <a href="#Informasi" target="_self">Informasi</a> | 
+        <a href="#Industri" target="_self">Industri</a> | 
+        <a href="#Pendaftaran" target="_self">Pendaftaran</a> | 
+        <a href="#Kontak" target="_self">Kontak</a>
+        <hr>
+
+        <!-- Section Informasi -->
+        <h2 id="Informasi">Informasi Prakerin</h2>
+        <p><strong>Periode:</strong> Januari-Maret 2027</p>
+        <p><strong>Peserta:</strong> Siswa Kelas XI</p>
+        <p><strong>Durasi:</strong> 3 Bulan</p>
+        <p><strong>Lokasi:</strong> Perusahaan mitra sekolah</p>
+
+        <!-- Section Pendaftaran -->
+        <h2 id="Pendaftaran">Formulir Pendaftaran</h2>
+        
+        <form action="" method="post">
+            <table border="1" cellpadding="8" cellspacing="0">
+                <tr>
+                    <th colspan="2"><h2>DATA PESERTA PRAKERIN</h2></th>
+                </tr>
+                <tr>
+                    <td><strong>Nama Lengkap</strong></td>
+                    <td><input type="text" name="nama"></td>
+                </tr>
+                <tr>
+                    <td><strong>NIS</strong></td>
+                    <td><input type="number" name="nis"></td>
+                </tr>
+                <tr>
+                    <td><strong>Kelas</strong></td>
+                    <td>
+                        <select name="kelas">
+                            <option value="">Pilih Kelas</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Jurusan</strong></td>
+                    <td>
+                        <select name="jurusan">
+                            <option value="">Pilih Jurusan</option>
+                            <option value="TKJ">TKJ</option>
+                            <option value="RPL">RPL</option>
+                            <option value="PG">PG</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Jenis Kelamin</strong></td>
+                    <td>
+                        <input type="radio" id="jk_l" name="jenis_kelamin" value="Laki-laki">
+                        <label for="jk_l">Laki-laki</label>
+                        <input type="radio" id="jk_p" name="jenis_kelamin" value="Perempuan">
+                        <label for="jk_p">Perempuan</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Tanggal Lahir</strong></td>
+                    <td><input type="date" name="tgl_lahir"></td>
+                </tr>
+                <tr>
+                    <td><strong>Email</strong></td>
+                    <td><input type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td><strong>No. WhatsApp</strong></td>
+                    <td><input type="tel" name="whatsapp"></td>
+                </tr>
+                <tr>
+                    <td><strong>Bidang Prakerin</strong></td>
+                    <td>
+                        <select name="bidang">
+                            <option value="">Pilih Bidang</option>
+                            <option value="Network Engineering">Network Engineering</option>
+                            <option value="Software Development">Software Development</option>
+                            <option value="Cyber Security">Cyber Security</option>
+                            <option value="Game Development">Game Development</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Pilihan Lokasi</strong></td>
+                    <td>
+                        <select name="lokasi">
+                            <option value="">Pilih Lokasi</option>
+                            <option value="PT Telkom Indonesia">PT Telkom Indonesia</option>
+                            <option value="Perusahaan Software House">Perusahaan Software House</option>
+                            <option value="Instansi Pemerintah">Instansi Pemerintah</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Kemampuan yang Dimiliki</strong></td>
+                    <td>
+                        <input type="checkbox" id="html" name="kemampuan[]" value="HTML">
+                        <label for="html">HTML</label><br>
+                        
+                        <input type="checkbox" id="css" name="kemampuan[]" value="CSS">
+                        <label for="css">CSS</label><br>
+                        
+                        <input type="checkbox" id="js" name="kemampuan[]" value="JavaScript">
+                        <label for="js">JavaScript</label><br>
+                        
+                        <input type="checkbox" id="db" name="kemampuan[]" value="Database">
+                        <label for="db">Database</label><br>
+                        
+                        <input type="checkbox" id="net" name="kemampuan[]" value="Networking">
+                        <label for="net">Networking</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Kesediaan Mengikuti Pembekalan</strong></td>
+                    <td>
+                        <input type="checkbox" id="kesediaan" name="kesediaan" value="bersedia">
+                        <label for="kesediaan">Saya bersedia mengikuti pembekalan Prakerin.</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Daftar Prakerin">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <h2>Daftar Industri Mitra</h2>
+        <table border="1" cellpadding="8" cellspacing="0" width="500">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama Industri</th>
+                    <th>Bidang</th>
+                    <th>Kuota</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="center">1</td>
+                    <td>PT Teknologi Nusantara</td>
+                    <td>Software</td>
+                    <td align="center">10</td>
+                </tr>
+                <tr>
+                    <td align="center">2</td>
+                    <td>CV Digital Kreatif</td>
+                    <td>Web Development</td>
+                    <td align="center">8</td>
+                </tr>
+                <tr>
+                    <td align="center">3</td>
+                    <td>PT Network Indonesia</td>
+                    <td>Networking</td>
+                    <td align="center">12</td>
+                </tr>
+                <tr>
+                    <td align="center">4</td>
+                    <td>CV Solusi Data</td>
+                    <td>Database</td>
+                    <td align="center">6</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
